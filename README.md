@@ -146,9 +146,3 @@ ProjetSnake is protected under the [MIT License](https://choosealicense.com/lice
 ## Acknowledgments
 
 * Credit contributors, inspiration, and references
-
-<div align="right">
-[![][back-to-top]](#top)
-</div>
-
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
