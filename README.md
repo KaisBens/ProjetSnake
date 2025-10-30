@@ -48,7 +48,18 @@
 
 ## Features
 
-<code>❯ REPLACE-ME</code>
+|      | Component       | Details                              |
+| :--- | :-------------- | :----------------------------------- |
+| ⚙️  | **Architecture**  | <ul><li>Likely a simple, single-process application due to the nature of Snake and the absence of complex architectural elements.</li><li>Structure probably involves a game loop, handling user input, updating game state, and rendering the game.</li><li>Based on the dependencies, it's likely a procedural or object-oriented approach in *C*.</li></ul> |
+| 🔩 | **Code Quality**  | <ul><li>Dependent on the coding style and practices of the developer(s).</li><li>Could range from well-structured and commented to less organized, depending on the project's size and development process.</li><li>Absence of explicit code quality tools suggests manual code review or no specific quality checks.</li></ul> |
+| 📄 | **Documentation** | <ul><li>No documentation is explicitly mentioned.</li><li>Likely minimal or absent, common for smaller projects.</li><li>Could include comments within the *C* source code.</li></ul> |
+| 🔌 | **Integrations**  | <ul><li>No external integrations are indicated.</li><li>The project is self-contained.</li><li>Might interact with the operating system for input/output (e.g., keyboard input, screen output).</li></ul> |
+| 🧩 | **Modularity**    | <ul><li>Likely limited modularity, given the project's scope and the *C* language.</li><li>Could be divided into modules for game logic, rendering, and input handling.</li><li>Header files (*.h*) would likely define interfaces for these modules.</li></ul> |
+| 🧪 | **Testing**       | <ul><li>No testing framework or testing strategy is explicitly mentioned.</li><li>Likely no automated tests.</li><li>Testing would probably be manual, through gameplay.</li></ul> |
+| ⚡️  | **Performance**   | <ul><li>Performance is likely a consideration, especially for smooth gameplay.</li><li>Optimization might involve efficient algorithms for game logic and rendering.</li><li>The *C* language allows for fine-grained control over memory and performance.</li></ul> |
+| 🛡️ | **Security**      | <ul><li>Security is likely not a primary concern for a Snake game.</li><li>No specific security measures are expected.</li><li>Vulnerabilities are unlikely given the project's scope.</li></ul> |
+| 📦 | **Dependencies**  | <ul><li>Uses the *C* standard library.</li><li>Relies on the *makefile* for build management.</li><li>No external libraries are explicitly mentioned.</li></ul> |
+| 🚀 | **Scalability**   | <ul><li>Scalability is not a primary concern.</li><li>The game is designed for a single player and a limited game area.</li><li>No features for scaling are expected.</li></ul> |
 
 ---
 
@@ -102,47 +113,47 @@
 			</thead>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/collisions.c'>collisions.c</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Collision detection is implemented to determine if an object interacts with the games boundaries<br>- It checks if an objects coordinates exceed the defined screen dimensions<br>- The function returns a value indicating a collision with a wall, crucial for preventing objects from moving off-screen and maintaining game integrity within the broader game architecture.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/collisions.h'>collisions.h</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Detection of wall collisions is the primary function<br>- It provides a mechanism to determine if an objects position, defined by x and y coordinates, intersects with a wall within the game environment<br>- This functionality is crucial for managing object movement and preventing them from passing through solid obstacles, thus maintaining the games physical integrity.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/main.c'>main.c</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Manages the core gameplay loop of the Snake game<br>- It initializes the graphics, displays the menu, and handles game logic when the game starts<br>- It controls serpent movement, collision detection with walls and food, score updates, and a timer<br>- The program ends when the game is over, and the graphics are closed.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/Makefile'>Makefile</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Builds the snake executable<br>- It orchestrates the compilation of several source files, including those related to collisions, the snake's movement, apple generation, time and score management, menu interactions, and wall boundaries<br>- The Makefile specifies compilation flags, linking dependencies, and provides targets for cleaning and running the game.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/menu.c'>menu.c</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Presents a game menu within the application<br>- It displays Jouer and Quitter options as interactive buttons<br>- The function detects mouse clicks within the button boundaries<br>- Selecting Jouer returns a value to initiate gameplay, while Quitter exits the application<br>- The menu continuously renders until a selection is made.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/menu.h'>menu.h</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Menu.h defines the interface for a menu function within the project<br>- Its primary role is to declare a function, AfficherMenu, which likely handles the display and interaction of a menu<br>- This function is crucial for user navigation and control within the application, providing a structured way to access different functionalities of the overall codebase<br>- It serves as a central point for user input and program flow.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/mur.c'>mur.c</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Generates and manages wall elements within the game environment<br>- It initializes the positions of 25 wall segments randomly on the game board and renders their visual representation<br>- Additionally, it includes a collision detection function to check for interactions between the players head and the generated walls, returning a specific value upon collision.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/mur.h'>mur.h</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Defines functions crucial for handling walls within the project<br>- It provides mechanisms to determine wall collisions and manage wall segments<br>- These functions likely support the games physics engine, enabling interaction between game objects and the environments boundaries<br>- The header file ensures these wall-related functionalities are accessible throughout the codebase.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/pommes.c'>pommes.c</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Generates and manages apple objects within the game environment<br>- It randomly positions multiple apples on the game board, ensuring they dont overlap with the snakes body segments<br>- Furthermore, it detects collisions between the snake's head and the apples, repositioning the consumed apple and signaling a successful interaction<br>- This functionality is crucial for gameplay.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/pommes.h'>pommes.h</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Pommes.h defines functions crucial for managing apple-related game elements within the codebase<br>- It facilitates apple generation, positioning, and collision detection with the snakes body segments<br>- These functions, including Pomme and Collisions_Pommes, are essential for gameplay, determining when the snake consumes an apple and updating the game state accordingly<br>- This header file provides the interface for apple-related operations.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/serpent.c'>serpent.c</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Implements the core logic for the Snake game within the larger codebase<br>- It initializes the snakes starting position and length, handles its movement based on player input, and renders the snakes body using images<br>- The file also includes collision detection to determine game over conditions and manages user input for directional control.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/serpent.h'>serpent.h</a></b></td>
@@ -150,11 +161,11 @@
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/time_score.c'>time_score.c</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Calculates and displays the games score and elapsed time<br>- It determines the score based on the number of game segments completed, updating the display accordingly<br>- Simultaneously, it tracks the games duration, incrementing minutes and seconds, and presents the formatted time on the screen<br>- These functions contribute to the game's user interface, providing real-time feedback to the player.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='./ProjetSnake/blob/master/time_score.h'>time_score.h</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+					<td style='padding: 8px;'>- Defines time-related functionalities within the project<br>- It establishes a constant for a cycle duration<br>- It declares functions to manage a timer, tracking minutes and seconds, and to calculate a score based on the number of segments<br>- These elements contribute to the games timing and scoring mechanisms, crucial for gameplay.</td>
 				</tr>
 			</table>
 		</blockquote>
