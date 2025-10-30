@@ -1,4 +1,6 @@
-<div id="top">
+from pathlib import Path
+
+readme_content = """<div id="top">
 
 <!-- HEADER STYLE: CLASSIC -->
 
@@ -22,6 +24,7 @@
 * [Overview](#overview)
 * [Features](#features)
 * [Project Structure](#project-structure)
+* [Project Index](#project-index)
 * [Getting Started](#getting-started)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
@@ -82,67 +85,3 @@ ProjetSnake/
 ├── serpent.h
 ├── time_score.c
 └── time_score.h
-```
-
----
-
-## Getting Started
-
-### Prerequisites
-
-* **Programming Language:** C
-
-### Installation
-
-1. **Clone the repository:**
-
-   ```sh
-   git clone ../ProjetSnake
-   ```
-
-2. **Navigate to the project directory:**
-
-   ```sh
-   cd ProjetSnake
-   ```
-
-3. **Build the project:**
-
-   ```sh
-   make
-   ```
-
-### Usage
-
-Run the game with:
-
-```sh
-./snake
-```
-
-### Testing
-
-Manual testing via gameplay. No automated test framework is included.
-
----
-
-## Contributing
-
-* Fork the repository
-* Clone locally
-* Create a new branch
-* Make changes and commit
-* Push to your fork
-* Open a pull request
-
----
-
-## License
-
-ProjetSnake is protected under the [MIT License](https://choosealicense.com/licenses/mit/).
-
----
-
-## Acknowledgments
-
-* Credit contributors, inspiration, and references
