@@ -4,8 +4,6 @@
 
 <div align="center">
 
-<img src="readmeai/assets/logos/purple.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
-
 # PROJETSNAKE
 
 <em>A simple Snake game built in C</em>
